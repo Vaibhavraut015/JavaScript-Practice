@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <h2>checking value is positive or negative or zero</h2>
+    <script type="text/javascript">
+        function check() {
+            var value = document.getElementById('data').value;
+            // var result = Math.sign(value);
+            if (value > 0) {
+                res = `${value} is positive Number`;
+            }
+            else if (value < 0) {
+                res = `${value} is negative Number`;
+            }
+            else if (value == 0) {
+                res = `${value} is zero Number`;
+            }
+            else {
+                res = `${value} is not a Number`;
+            }
+            document.getElementById('res').innerText = res;
+        }    
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <input type="" name="" id="data" />
+    <br />
+    <button onclick="check()">Check</button>
+    <h2 id="res"></h2>
+</body>
+
+</html>

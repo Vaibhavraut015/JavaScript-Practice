@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1</title>
+</head>
+
+<body>
+    <input type="text" name="name" id="name" />
+    <button onclick="greet()">Greet</button>
+    <div class="greet"></div>
+    <!-- Javascript Functions -->
+    <script type="text/javascript">
+        //  alert("Hello! Welcome to My Website");
+        // confirm("To enter the website");
+        // console.log("now we enter my website");
+        // var name = prompt("Enter your Name:","");
+        // document.write("name")
+
+    // javascript Variables
+        // var age;
+        // age = "enter a number: 13";
+        // alert ("age");
+
+    // Javascript DOM function
+        // document.getElementById("name");
+        // var x = document.getElementByClassName("name").innerHTML;
+        // document.write(x);
+
+        function greet() {
+            var name = document.getElementById("name").value;
+            var string = "Hello" + name;
+            document.getElementsByClassName("greet")[0].innerHTML = string;
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
